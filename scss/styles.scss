@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik&display=swap');
+
+body{
+    background-color:rgb(75, 12, 75) ;
+margin: 10px;
+}
+.hall{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        
+        
+      }
+
+      #fields-input-year{
+        
+        align-items: center;
+        padding: 40px;
+      }
+
+
+.logo__terrua{
+width: 200px;
+height: 200px;
+
+}
