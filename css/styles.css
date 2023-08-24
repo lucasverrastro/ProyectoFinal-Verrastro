@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik&display=swap");
+/*font-family: 'Nunito', sans-serif; */
 body {
   background-color: rgb(75, 12, 75);
-  margin: 10px;
+  color: beige;
+  font-family: "Nunito", sans-serif;
+  margin: 10px 5px 10px 5px;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  color: beige;
 }
 
 .hall {
@@ -10,15 +18,23 @@ body {
   justify-self: center;
   align-items: center;
 }
-
-#fields-input-year {
+.hall .logo__terrua {
+  width: 200px;
+  height: 200px;
+}
+.hall #fields-input-year {
   align-items: center;
   padding: 40px;
 }
 
-.logo__terrua {
-  width: 200px;
-  height: 200px;
+.card {
+  background-color: rgb(46, 16, 46);
+  display: flex;
+  align-content: end;
+}
+.card .footer__hall {
+  font-size: small;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
