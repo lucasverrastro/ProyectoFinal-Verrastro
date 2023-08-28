@@ -47,9 +47,17 @@ p {
   height: 70px;
 }
 
+.nav-superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
 .d-flex {
   width: 300px;
   height: 40px;
+  display: flex;
+  justify-content: right;
 }
 
 .nav {
@@ -63,12 +71,26 @@ p {
 
 .carousel-inner {
   height: 400px;
+  margin: 20px 0px 20px 0px;
 }
 
-.whatsapp {
-  position: fixed;
+.boton-whatsapp {
   display: flex;
+  position: sticky;
   justify-content: right;
+}
+
+.index__medio {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
+}
+.index__medio .index__medio--iconos {
+  width: 35px;
+  height: 30px;
+}
+.index__medio .index__medio--partes {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
