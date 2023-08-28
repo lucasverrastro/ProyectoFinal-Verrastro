@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik&display=swap');
 /*font-family: 'Nunito', sans-serif; */
 body{
-  background-color:rgb(75, 12, 75) ;
+  background-color: #660c33 ;
   color: beige;
   font-family: 'Nunito', sans-serif;
   margin: 10px 5px 10px 5px;
+}
+a{
+  font-family: 'Nunito', sans-serif;
+  color: beige;
 }
 p {
   font-family: 'Nunito', sans-serif;
@@ -36,5 +40,25 @@ p {
     }
 .index__logo{
   width: 200px;
-  height: 200px;
-}    
+  height: 70px;
+} 
+.d-flex{
+  width: 300px;
+  height: 40px;
+}   
+.nav{
+  justify-content: space-between;
+  align-items: center; 
+  .nav-link{
+    font-family: 'Nunito', sans-serif;
+    color: beige; 
+  }
+}
+.carousel-inner{
+  height: 400px;
+}
+.whatsapp{
+  position: fixed;
+  display: flex;
+  justify-content: right;
+}
