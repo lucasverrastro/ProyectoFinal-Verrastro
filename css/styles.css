@@ -52,12 +52,12 @@ p {
   flex-direction: row;
   justify-content: right;
 }
-
-.d-flex {
+.nav-superior .d-flex {
   width: 300px;
   height: 40px;
   display: flex;
   justify-content: right;
+  column-gap: 5px;
 }
 
 .nav {
@@ -71,13 +71,14 @@ p {
 
 .carousel-inner {
   height: 400px;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px 30px 0px;
 }
 
 .boton-whatsapp {
-  display: flex;
-  position: sticky;
-  justify-content: right;
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
 }
 
 .index__medio {
