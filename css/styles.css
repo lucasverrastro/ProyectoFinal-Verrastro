@@ -113,33 +113,35 @@ p {
   background-color: darkgoldenrod;
 }
 
-.container-cards {
-  width: 200px;
-  height: 300px;
-  margin-left: 150px;
+.container__cards {
   display: grid;
+  justify-items: center;
+  margin-bottom: 50px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 100px;
-  grid-row-gap: 300px;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 50px;
 }
 
 .card {
   width: 185px;
-  height: 250px;
 }
 .card .card-img-top {
   width: 185px;
   height: 250px;
 }
-
-.card-body {
+.card .card-body {
   font-family: "Nunito", sans-serif;
   color: beige;
+  background-color: rgb(46, 16, 46);
+  text-align: center;
+}
+.card .list-group {
   text-align: center;
 }
 
-.list-group {
-  text-align: center;
+.boton__ver__productos {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
