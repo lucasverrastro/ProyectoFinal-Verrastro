@@ -4,7 +4,7 @@ body {
   background-color: #660c33;
   color: beige;
   font-family: "Nunito", sans-serif;
-  margin: 10px 5px 10px 5px;
+  margin: 10px 5px 0px 5px;
 }
 
 a {
@@ -37,14 +37,12 @@ p {
   padding: 40px;
 }
 
-.card {
+.hall__footer {
   background-color: rgb(46, 16, 46);
-  display: flex;
-  align-content: end;
-}
-.card .footer__hall {
-  font-size: small;
+  display: flexbox;
+  position: relative;
   text-align: center;
+  align-content: flex-end;
 }
 
 .index__logo {
@@ -68,6 +66,7 @@ p {
 .nav {
   justify-content: space-between;
   align-items: center;
+  /*background-color: darkgoldenrod;*/
 }
 .nav .nav-link {
   font-family: "Nunito", sans-serif;
@@ -142,6 +141,24 @@ p {
 .boton__ver__productos {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background-color: darkgoldenrod;
+  display: flex;
+}
+.footer .footer__elementos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin: 50px;
+}
+.footer .footer__elementos .ubicacion {
+  width: 150px;
+  height: 100px;
+  border: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */
