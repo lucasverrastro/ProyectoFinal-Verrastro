@@ -139,12 +139,23 @@ p {
   justify-content:space-between;
   text-align: left;
   margin: 50px;
+  }
+  .footer__elementos--l{
+    display: flex;
+    flex-direction: column; 
+  }
   .ubicacion{
     width: 150px; 
     height: 100px; 
-    border:0px;
   }
 }
+.promociones__titulo{
+  background-color: darkgoldenrod;
+  margin-top: 15px;
+  margin-bottom: 100px; 
+  display: flex;
+  justify-content: center;
 }
+
 
 

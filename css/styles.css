@@ -155,10 +155,21 @@ p {
   text-align: left;
   margin: 50px;
 }
-.footer .footer__elementos .ubicacion {
+.footer .footer__elementos--l {
+  display: flex;
+  flex-direction: column;
+}
+.footer .ubicacion {
   width: 150px;
   height: 100px;
-  border: 0px;
+}
+
+.promociones__titulo {
+  background-color: darkgoldenrod;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
