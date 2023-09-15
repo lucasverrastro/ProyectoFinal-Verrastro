@@ -1,0 +1,25 @@
+.index__logo{
+    width: 200px;
+    height: 70px;
+  } 
+  .nav-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+  .d-flex{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    column-gap: 5px;
+  }  
+  } 
+  .nav{
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: darkgoldenrod;*/
+      .nav-link{
+      font-family: 'Nunito', sans-serif;
+      color: beige; 
+      }
+  }

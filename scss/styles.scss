@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Rubik&display=swap');
-/*font-family: 'Nunito', sans-serif; */
+@import "navbar";
+@import "footer";
 body{
   background-color: #660c33 ;
   color: beige;
@@ -40,32 +41,7 @@ p {
   align-content: flex-end;
             
 }
-.index__logo{
-  width: 200px;
-  height: 70px;
-} 
-.nav-superior{
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-.d-flex{
-  width: 300px;
-  height: 40px;
-  display: flex;
-  justify-content: right;
-  column-gap: 5px;
-}  
-} 
-.nav{
-  justify-content: space-between;
-  align-items: center;
-  /*background-color: darkgoldenrod;*/
-   
-  .nav-link{
-    font-family: 'Nunito', sans-serif;
-    color: beige; 
-  }
-}
+
 .carousel-inner{
   height: 400px;
   margin: 20px 0px 30px 0px;
@@ -130,31 +106,19 @@ p {
   justify-content: center;
   margin-bottom: 50px;
 }
-.footer{  
-  background-color: darkgoldenrod;
-  display: flex;
-  .footer__elementos{
-  width: 100%;
-  display: flex;
-  justify-content:space-between;
-  text-align: left;
-  margin: 50px;
-  }
-  .footer__elementos--l{
-    display: flex;
-    flex-direction: column; 
-  }
-  .ubicacion{
-    width: 150px; 
-    height: 100px; 
-  }
-}
-.promociones__titulo{
+
+.titulos{
   background-color: darkgoldenrod;
   margin-top: 15px;
   margin-bottom: 100px; 
   display: flex;
   justify-content: center;
+}
+.subtitulos{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-decoration:dotted;
 }
 
 

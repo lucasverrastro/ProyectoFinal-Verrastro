@@ -1,0 +1,19 @@
+.footer{  
+    background-color: darkgoldenrod;
+    display: flex;
+    .footer__elementos{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    text-align: left;
+    margin: 50px;
+    }
+    .footer__elementos--l{
+      display: flex;
+      flex-direction: column; 
+    }
+    .ubicacion{
+      width: 150px; 
+      height: 100px; 
+    }
+  }
