@@ -12,11 +12,11 @@
 <nav>
   <div class="nav-superior">
   <form class="d-flex" role="search">
-    <button class="btn btn-success" type="submit">Buscar</button>
+    <button class="btn btn-success"  type="submit">Buscar</button>
     <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
     
   </form>
-  <a  class="index__icono__carrito" href=""><img src="../images/carrito-de-compras.png"></a>
+  <button class="btn" onclick="listar()"><a  class="index__icono__carrito" href=""><img src="../images/carrito-de-compras.png"></a></button>
   </div>
 
     <ul class="nav nav-tabs">
@@ -66,111 +66,111 @@
 <h2 class="titulos">BEBIDAS CON ALCOHOL</h2>
 <h3 class="subtitulos"><strong>VINOS</strong></h3>
 <div class="container__cards">
-  <div class="card">
+  <div class="card" data-id="1">
     <img src="../images/botella_alma_negra.jpg" class="card-img-top" alt="botella de alma negra">
     <div class="card-body">
       <h5 class="card-title">ALMA NEGRA BLEND</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$7.840</li>
+      <li class="list-group-item">$7840</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
-    </div>
+    <button class="btn btn-warning btn-sm" onclick="agregar(1)">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm" onclick="quitar()">Quitar del carrito</button>
+    <button class="btn btn-warning btn-sm" onclick="listar()">Listar carrito</button>
   </div>
-  <div class="card">
+  </div>
+  <div class="card" data-id="2">
     <img src="../images/botella_catena_zapata.jpg" class="card-img-top" alt="D.V CATENA">
     <div class="card-body">
       <h5 class="card-title">D.V CATENA MALBEC</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$7.258</li>
+      <li class="list-group-item">$7250</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
+      <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card" data-id="3">
     <img src="../images/botella_luigi_bosca.jpg" class="card-img-top" alt="LUIGI BOSCA">
     <div class="card-body">
       <h5 class="card-title">LUIGI BOSCA MALBEC</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$5.100</li>
+      <li class="list-group-item">$5100</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
+      <button class="btn btn-warning btn-sm" onclick="agregar(3)">Agregar al carrito</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card" data-id="4">
     <img src="../images/botella_nicasia.jpg" class="card-img-top" alt="NICASIA">
     <div class="card-body">
       <h5 class="card-title">NICASIA MALBEC</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$3.500</li>
+      <li class="list-group-item">$3500</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
+      <button class="btn btn-warning btn-sm" onclick="agregar(4)">Agregar al carrito</button>
     </div>
   </div>
-  <div class="card">
-    <img src="../images/botella_piatelli_arlene.jpg" class="card-img-top" alt="PIATELLI ARLENE">
+  <div class="card" data-id="5">
+    <img src="../images/botella_piattelli_arlene.jpg" class="card-img-top" alt="PIATELLI ARLENE">
     <div class="card-body">
-      <h5 class="card-title">PIATELLI ARLENE</h5>
+      <h5 class="card-title">PIATTELLI ARLENE</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$11.420</li>
+      <li class="list-group-item">$11420</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
+      <button class="btn btn-warning btn-sm" onclick="agregar(5)">Agregar al carrito</button>
     </div>
   </div>
-  <div class="card">
-    <img src="../images/botella_piatelli_torrontes.jpg" class="card-img-top" alt="PIATELLI TORRONTES">
+  <div class="card" data-id="6">
+    <img src="../images/botella_piattelli_torrontes.jpg" class="card-img-top" alt="PIATELLI TORRONTES">
     <div class="card-body">
-      <h5 class="card-title">PIATELLI TORRONTES</h5>
+      <h5 class="card-title">PIATTELLI TORRONTES</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$2.800</li>
+      <li class="list-group-item">$2800</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
+      <button class="btn btn-warning btn-sm" onclick="agregar(6)">Agregar al carrito</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card" data-id="7">
     <img src="../images/botella_rutini.jpg" class="card-img-top" alt="RUTINI">
     <div class="card-body">
       <h5 class="card-title">RUTINI <br> MALBEC</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$8.550</li>
+      <li class="list-group-item">$8550</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
+      <button class="btn btn-warning btn-sm" onclick="agregar(7)">Agregar al carrito</button>
     </div>
   </div>
-  <div class="card">
+  <div class="card" data-id="8">
     <img src="../images/botella_salentein.jpg" class="card-img-top" alt="SALENTEIN">
     <div class="card-body">
       <h5 class="card-title">SALENTEIN MALBEC</h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$3.450</li>
+      <li class="list-group-item">$3450</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link">Comprar ahora</a>
-      <a href="#" class="card-link">Añadir al carrito</a>
+      <button class="btn btn-warning btn-sm" onclick="agregar(8)">Agregar al carrito</button>
     </div>
   </div>
   </div>
+
+  <h2>Carrito de Compras</h2>
+  <ul id="carrito">
+      <!-- Cart items will be added here dynamically using JavaScript -->
+  </ul>
+  <p>Total: $<span id="total">0</span></p>
 
   <footer class="footer">
     <section class="footer__elementos">
@@ -194,5 +194,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="../javascript/main.js"></script>
 </body>
 </html>

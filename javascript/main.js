@@ -1,31 +1,67 @@
-        const items = [
-            { id: 1, name: 'Item 1', price: 10 },
-            { id: 2, name: 'Item 2', price: 20 },
-            { id: 3, name: 'Item 3', price: 30 }
-        ];
+const carrito = [];
 
-        const cart = [];
+function agregar(cardId) {
 
-        function addItem(itemId) {
-            const item = items.find(item => item.id === itemId);
-            if (item) {
-                cart.push(item);
-                updateCart();
-            }
-        }
+    const card = document.querySelector(`[data-id="${cardId}"]`);
+    const cardNombre = card.querySelector('.card-title').textContent;
+    const cardPrecio = parseFloat(card.querySelector('.list-group-item').textContent.replace('$', ''));
+};
+const almaNegraBlend = {
+  id: 1,  
+  nombre: "Alma Negra Blend",
+  precio: 7840,
+  subtotal: 7840,
+  cantidad: 1,
+};
+const dvCatenaZapata = {
+  id: 2,  
+  nombre: "D.V Catena Zapata",
+  precio: 7250,
+  subtotal: 7250,
+  cantidad: 1,
+};
+const luigiBoscaMalbec = {
+  id: 3,  
+  nombre: "Luigi Bosca Malbec",
+  precio: 5100,
+  subtotal: 5100,
+  cantidad: 1,
+};
+const nicasiaMalbec = {
+  id: 4,  
+  nombre: "Nicasia Malbec",
+  precio: 3500,
+  subtotal: 3500,
+  cantidad: 1,
+};
 
-        function updateCart() {
-            const cartList = document.getElementById('cart');
-            const cartTotal = document.getElementById('cart-total');
-            let total = 0;
+carrito.push(almaNegraBlend);
+carrito.push(dvCatenaZapata);
+carrito.push(luigiBoscaMalbec);
+carrito.push(nicasiaMalbec);
 
-            cartList.innerHTML = '';
-            cart.forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = `${item.name} - $${item.price}`;
-                cartList.appendChild(li);
-                total += item.price;
-            });
+actualizarCarrito();
+function actualizarCarrito() {
+    const listaCarrito = document.getElementById('Carrito');
+    const totalElement = document.getElementById('total');
 
-            cartTotal.textContent = total;
-        }
+    // Clear the current cart display
+    listaCarrito.innerHTML = '';
+
+    // Calculate the total price
+    let total = 0;
+
+    // Loop through each item in the cart and display it
+    cart.forEach(item => {
+        const listaCarrito = document.createElement('li');
+        listaCarrito.textContent = `${card.nombre} - $${card.precio}`;
+        listaCarrito.appendChild(listaCarrito);
+        total += card.precio;
+    });
+
+    // Update the total price
+    totalElement.textContent = total.toFixed(2);
+}
+
+
+

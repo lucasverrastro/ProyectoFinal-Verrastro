@@ -166,7 +166,7 @@ p {
 .titulos {
   background-color: darkgoldenrod;
   margin-top: 15px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   display: flex;
   justify-content: center;
 }
@@ -176,6 +176,30 @@ p {
   justify-content: center;
   margin-bottom: 50px;
   text-decoration: dotted;
+}
+
+.tarjeta__contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.tarjeta__contacto .borde {
+  background-color: rgb(46, 16, 46);
+  padding: 55px 40px;
+  box-shadow: 0 0 20px rgb(152, 137, 137);
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+}
+.tarjeta__contacto .formularios {
+  font-family: "Nunito", sans-serif;
+  color: beige;
+  text-align: center;
+}
+.tarjeta__contacto .boton__enviar {
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
