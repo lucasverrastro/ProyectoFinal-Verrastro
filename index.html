@@ -11,16 +11,17 @@
 <body>
 <nav>
   <div class="nav-superior">
-  <form class="d-flex" role="search">
-    <button class="btn btn-success" type="submit">Buscar</button>
-    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-    
-  </form>
-  <div class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="./images/carrito-de-compras.png"></a>
-    <ul class="dropdown-menu">
-    </ul>
-  </div>
+    <form class="d-flex" role="search">
+      <button class="btn btn-success" type="submit">Buscar</button>
+      <input class="form-control me-2" type="search" placeholder="" aria-label="Search"> 
+    </form>
+
+    <div class="carrito">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="./images/carrito-de-compras.png"></a>
+      <ul id="productos-carrito" class="dropdown-menu">
+         <p>Total: <span id="total-carrito">$0</span></p> <!-- Aquí se agregarán los elementos del carrito -->
+      </ul>
+    </div>
   </div>
 
     <ul class="nav nav-tabs">
@@ -130,8 +131,7 @@
     <li class="list-group-item">$7840</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-1">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -143,8 +143,7 @@
     <li class="list-group-item">$7250</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-2">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -156,8 +155,7 @@
     <li class="list-group-item">$5100</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-3">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -169,8 +167,7 @@
     <li class="list-group-item">$3500</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-4">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -182,8 +179,7 @@
     <li class="list-group-item">$11420</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-5">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -195,8 +191,7 @@
     <li class="list-group-item">$2800</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-6">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -208,8 +203,7 @@
     <li class="list-group-item">$8550</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-7">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -221,8 +215,7 @@
     <li class="list-group-item">$3450</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="card-link">Comprar ahora</a>
-    <a href="#" class="card-link">Añadir al carrito</a>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn-8">Agregar al carrito</button>
   </div>
 </div>
 </div>

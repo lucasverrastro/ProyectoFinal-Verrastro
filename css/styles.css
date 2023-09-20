@@ -25,6 +25,11 @@
   color: beige;
 }
 
+.carrito p {
+  font-family: "Nunito", sans-serif;
+  color: black;
+}
+
 .footer {
   background-color: darkgoldenrod;
   display: flex;
