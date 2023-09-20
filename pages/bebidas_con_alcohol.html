@@ -13,10 +13,13 @@
   <div class="nav-superior">
   <form class="d-flex" role="search">
     <button class="btn btn-success"  type="submit">Buscar</button>
-    <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-    
+    <input id="buscador" class="form-control me-2" type="search" placeholder="" aria-label="Search"> 
+  <div id="resultados">
+
+  </div>
   </form>
-  <button class="btn" onclick="listar()"><a  class="index__icono__carrito" href=""><img src="../images/carrito-de-compras.png"></a></button>
+  
+  <a  class="index__icono__carrito" href=""><img src="../images/carrito-de-compras.png"></a>
   </div>
 
     <ul class="nav nav-tabs">
@@ -75,9 +78,7 @@
       <li class="list-group-item">$7840</li>
     </ul>
     <div class="card-body">
-    <button class="btn btn-warning btn-sm" onclick="agregar(1)">Agregar al carrito</button>
-    <button class="btn btn-warning btn-sm" onclick="quitar()">Quitar del carrito</button>
-    <button class="btn btn-warning btn-sm" onclick="listar()">Listar carrito</button>
+      <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
   </div>
   </div>
   <div class="card" data-id="2">
@@ -166,11 +167,6 @@
   </div>
   </div>
 
-  <h2>Carrito de Compras</h2>
-  <ul id="carrito">
-      <!-- Cart items will be added here dynamically using JavaScript -->
-  </ul>
-  <p>Total: $<span id="total">0</span></p>
 
   <footer class="footer">
     <section class="footer__elementos">
