@@ -19,8 +19,10 @@
     <div class="carrito">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="../images/carrito-de-compras.png"></a>
       <ul id="productos-carrito" class="dropdown-menu">
-         <p>Total: <span id="total-carrito">$0</span></p> <!-- Aquí se agregarán los elementos del carrito -->
+         <!-- <p>Total: <span id="total-carrito">$0</span></p> Aquí se agregarán los elementos del carrito -->
+         <!-- <li>Total: <span id="total-carrito">$0</span></li> -->
       </ul>
+  
     </div>
   </div>
 
@@ -131,7 +133,19 @@
     <li class="list-group-item">$7840</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm" id="add-to-cart-btn">Agregar al carrito</button>
+  </div>
+</div>
+<div class="card">
+  <img src="./images/botella_alma_negra.jpg" class="card-img-top" alt="botella de alma negra">
+  <div class="card-body">
+    <h5 class="card-title" data-product-id="1">ALMA NEGRA BLEND</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" data-product-id="1">$7840</li>
+  </ul>
+  <div class="card-body">
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="1">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
