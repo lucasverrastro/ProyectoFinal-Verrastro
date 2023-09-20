@@ -1,99 +1,113 @@
-////BUSCADOR CON RECOMENDACIONES
-//
-//const listadoItems = ["Alma Negra Blend", "D.V Catena Zapata", "Luigi Bosca Malbec", "Nicasia Malbec", "Piattelli Arlene", "Piattelli Torrontes", "Rutini Malbec", "Salentein Malbec"];
-//
-//// Seleccionamos los elementos del HTML
-//const inputBuscar = document.querySelector("#buscador");
-//const divResultados = document.querySelector("#resultados");
-//
-//// Buscador: cada vez que se actualice el input, se dispara este detector de evento
-//inputBuscar.addEventListener("input", function () {
-//  const resultados = listadoItems.filter(
-//    (item) =>
-//      inputBuscar.value &&
-//      item.toLocaleLowerCase().includes(inputBuscar.value.toLocaleLowerCase())
-//  );
-//  actulizarHTML(resultados);
-//});
-//
-//// Función para actualizar nuestro HTML: me muestra los resultados en el
-//// div #resultados
-//function actulizarHTML(resultados) {
-//  // Vacío el div antes de mostrar los resultados por las dudas
-//  divResultados.innerHTML = "";
-//  // Recorro item por item de los resultados y los muestro en párrafo
-//  for (const item of resultados) {
-//    divResultados.innerHTML += `<p>${item}</p>`;
-//  }
-//}
-//
-//CARRITO DE COMPRAS
+// Obtén una referencia al contenedor del carrito y al elemento del total
+const carrito = document.getElementById("productos-carrito");
+const totalCarrito = document.getElementById("total-carrito");
 
-
-
-// Variables para mantener el estado del carrito
-const carrito = [];
-let total = 0;
+// Inicializa el carrito como un arreglo vacío
+const cart = [];
 
 // Función para agregar un producto al carrito
-function addToCart(productName, price) {
-    cart.push({ name: productName, price: price });
-    total += price;
+function addToCart(productName, productPrice) {
+    const item = { name: productName, price: productPrice };
+    cart.push(item);
+    updateCart();
 }
 
 // Función para actualizar el contenido del carrito
 function updateCart() {
-    const cartItemsElement = document.getElementById("productos-carrito");
-    cartItemsElement.innerHTML = "";
+    // Limpia el contenido del carrito
+    carrito.innerHTML = '';
 
-    cart.forEach((item, index) => {
-        const listItem = document.createElement("li");
+    // Inicializa el total del carrito
+    let total = 0;
+
+    // Recorre los elementos en el carrito y muestra cada uno
+    cart.forEach(item => {
+        const listItem = document.createElement('li');
         listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-        cartItemsElement.appendChild(listItem);
+        carrito.appendChild(listItem);
+        total += item.price;
     });
 
-    const cartTotalElement = document.getElementById("total-carrito");
-    cartTotalElement.textContent = `$${total.toFixed(2)}`;
+    // Actualiza el total del carrito
+    totalCarrito.textContent = total.toFixed(2);
 }
 
-// Event listeners para los botones "Añadir al carrito"
-const addToCartButtons = document.querySelectorAll("add-to-cart-btn");
-addToCartButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        const productDescription = document.querySelectorAll("list-group-item")[index].textContent;
-        const productPrice = parseFloat(productDescription.match(/\d+\.\d+/)[0]); // Extrae el precio del texto
-
-        addToCart(productDescription, productPrice);
-        updateCart();
+// Agregar eventos a los botones "Agregar al carrito"
+const botonesAgregar = document.querySelectorAll(".btnDisplay");
+botonesAgregar.forEach(boton => {
+    boton.addEventListener("click", () => {
+        const card = boton.closest(".card");
+        const productName = card.querySelector(".card-title").textContent;
+        const productPrice = parseFloat(card.querySelector(".list-group-item").textContent.replace("$", ""));
+        addToCart(productName, productPrice);
     });
 });
+// Función para actualizar el contenido del carrito
+function updateCart() {
+    // Limpia el contenido del carrito
+    carrito.innerHTML = '';
+
+    // Inicializa el total del carrito
+    let total = 0;
+
+    // Recorre los elementos en el carrito y muestra cada uno
+    cart.forEach((item, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+
+        // Agrega un botón "Eliminar" para cada elemento
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Eliminar';
+        deleteButton.addEventListener('click', () => {
+            removeFromCart(index); // Llama a la función para eliminar
+        });
+
+        // Agrega el botón al elemento de la lista
+        listItem.appendChild(deleteButton);
+
+        carrito.appendChild(listItem);
+        total += item.price;
+    });
+
+    // Actualiza el total del carrito
+    totalCarrito.textContent = total.toFixed(2);
+}
 
 // Función para eliminar un producto del carrito
 function removeFromCart(index) {
-  const removedItem = cart.splice(index, 1)[0];
-  total -= removedItem.price;
+    if (index >= 0 && index < cart.length) {
+        cart.splice(index, 1); // Elimina el elemento del arreglo
+        updateCart(); // Actualiza la vista del carrito
+    }
 }
-
 // Función para actualizar el contenido del carrito
 function updateCart() {
-  const cartItemsElement = document.getElementById("carrito");
-  cartItemsElement.innerHTML = "";
+    // Limpia el contenido del carrito
+    carrito.innerHTML = '';
 
-  cart.forEach((item, index) => {
-      const listItem = document.createElement("li");
-      listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-      
-      const removeButton = document.createElement("button");
-      removeButton.textContent = "Eliminar";
-      removeButton.addEventListener("click", () => {
-          removeFromCart(index);
-          updateCart();
-      });
+    // Inicializa el total del carrito
+    let total = 0;
 
-      listItem.appendChild(removeButton);
-      cartItemsElement.appendChild(listItem);
-  });
+    // Recorre los elementos en el carrito y muestra cada uno
+    cart.forEach((item, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
 
-  const cartTotalElement = document.getElementById("total-carrito");
-  cartTotalElement.textContent = `$${total.toFixed(2)}`;
+        // Agrega un botón "Eliminar" para cada elemento
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Eliminar';
+        deleteButton.addEventListener('click', () => {
+            removeFromCart(index); // Llama a la función para eliminar
+        });
+
+        // Agrega el botón al elemento de la lista
+        listItem.appendChild(deleteButton);
+
+        carrito.appendChild(listItem);
+        total += item.price;
+    });
+
+    // Actualiza el total del carrito debajo de la lista
+    totalCarrito.textContent = total.toFixed(2);
 }
+
