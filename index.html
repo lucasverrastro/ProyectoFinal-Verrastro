@@ -17,8 +17,8 @@
     </form>
 
     <div class="carrito">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="../images/carrito-de-compras.png"></a>
-      <ul id="productos-carrito" class="dropdown-menu">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" data-bs-auto-close="outside" aria-expanded="false"><img src="../images/carrito-de-compras.png"></a>
+      <ul id="productos-carrito" class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
          <!-- <p>Total: <span id="total-carrito">$0</span></p> Aquí se agregarán los elementos del carrito -->
          <!-- <li>Total: <span id="total-carrito">$0</span></li> -->
       </ul>
@@ -124,18 +124,7 @@
 </div>
 
 <div class="container__cards">
-<div class="card">
-  <img src="./images/botella_alma_negra.jpg" class="card-img-top" alt="botella de alma negra">
-  <div class="card-body">
-    <h5 class="card-title">ALMA NEGRA BLEND</h5>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">$7840</li>
-  </ul>
-  <div class="card-body">
-    <button class="btn btn-warning btn-sm" id="add-to-cart-btn">Agregar al carrito</button>
-  </div>
-</div>
+
 <div class="card">
   <img src="./images/botella_alma_negra.jpg" class="card-img-top" alt="botella de alma negra">
   <div class="card-body">
@@ -151,85 +140,85 @@
 <div class="card">
   <img src="./images/botella_catena_zapata.jpg" class="card-img-top" alt="D.V CATENA">
   <div class="card-body">
-    <h5 class="card-title">D.V CATENA MALBEC</h5>
+    <h5 class="card-title" data-product-id="2">D.V CATENA MALBEC</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">$7250</li>
+    <li class="list-group-item" data-product-id="2">$7250</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="2">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
   <img src="./images/botella_luigi_bosca.jpg" class="card-img-top" alt="LUIGI BOSCA">
   <div class="card-body">
-    <h5 class="card-title">LUIGI BOSCA MALBEC</h5>
+    <h5 class="card-title" data-product-id="3">LUIGI BOSCA MALBEC</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">$5100</li>
+    <li class="list-group-item" data-product-id="3">$5100</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="3">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
   <img src="./images/botella_nicasia.jpg" class="card-img-top" alt="NICASIA">
   <div class="card-body">
-    <h5 class="card-title">NICASIA MALBEC</h5>
+    <h5 class="card-title" data-product-id="4">NICASIA MALBEC</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">$3500</li>
+    <li class="list-group-item" data-product-id="4">$3500</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="4">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
   <img src="./images/botella_piattelli_arlene.jpg" class="card-img-top" alt="PIATELLI ARLENE">
   <div class="card-body">
-    <h5 class="card-title">PIATTELLI ARLENE</h5>
+    <h5 class="card-title" data-product-id="5">PIATTELLI ARLENE</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">$11420</li>
+    <li class="list-group-item" data-product-id="5">$11420</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="5">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
   <img src="./images/botella_piattelli_torrontes.jpg" class="card-img-top" alt="PIATELLI TORRONTES">
   <div class="card-body">
-    <h5 class="card-title">PIATTELLI TORRONTES</h5>
+    <h5 class="card-title" data-product-id="6">PIATTELLI TORRONTES</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">$2800</li>
+    <li class="list-group-item" data-product-id="6">$2800</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="6">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
   <img src="./images/botella_rutini.jpg" class="card-img-top" alt="RUTINI">
   <div class="card-body">
-    <h5 class="card-title">RUTINI <br> MALBEC</h5>
+    <h5 class="card-title" data-product-id="7">RUTINI <br> MALBEC</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">$8550</li>
+    <li class="list-group-item" data-product-id="7">$8550</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="7">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
   <img src="./images/botella_salentein.jpg" class="card-img-top" alt="SALENTEIN">
   <div class="card-body">
-    <h5 class="card-title">SALENTEIN MALBEC</h5>
+    <h5 class="card-title" data-product-id="8">SALENTEIN MALBEC</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">$3450</li>
+    <li class="list-group-item" data-product-id="8">$3450</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnDisplay">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="8">Agregar al carrito</button>
   </div>
 </div>
 </div>

@@ -10,50 +10,15 @@ let total = 0;
 
 // Función para agregar un producto al carrito
 function addToCart(productName, price) {
-    console.log('productName', productName)
-    console.log('price', price)
     cart.push({ name: productName, price: price });
     total += price;
-    console.log('total', total)
-    console.log(cart)
 }
-
-// Función para actualizar el contenido del carrito
-// function updateCart() {
-//     const cartItemsElement = document.getElementById("productos-carrito");
-//     console.log('cartItemsElement', cartItemsElement)
-//     cartItemsElement.innerHTML = "";
-
-//     cart.forEach((item, index) => {
-//         const listItem = document.createElement("li");
-//         listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-//         cartItemsElement.appendChild(listItem);
-//     });
-
-//     const cartTotalElement = document.getElementById("total-carrito");
-//     cartTotalElement.textContent = `$${total.toFixed(2)}`;
-// }
-
-// Event listeners para los botones "Añadir al carrito"
-// const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
-// addToCartButtons.forEach((button, index) => {
-//     button.addEventListener("click", () => {
-
-//         console.log('click en agregar producto')
-//         const productDescription = document.querySelectorAll(".list-group-item")[index].textContent;
-//         const productPrice = parseFloat(productDescription.match(/\d+\.\d+/)[0]); // Extrae el precio del texto
-
-//         addToCart(productDescription, productPrice);
-//         updateCart();
-//     });
-// });
 
 const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
 
 addToCartButtons.forEach(button => {
   button.addEventListener("click", (event) => {
     const productId = event.target.getAttribute("data-product-id");
-    console.log('productIds', productId)
     const productDescriptionElement = document.querySelector(`.list-group-item[data-product-id="${productId}"]`);
     const productNameElement = document.querySelector(`.card-title[data-product-id="${productId}"]`);
 
@@ -145,5 +110,7 @@ function updateCart() {
   listItemTotal.textContent = `Total : $${total.toFixed(2)}`;
   cartItemsElement.appendChild(listItemTotal)
 
+
+  
 
 
