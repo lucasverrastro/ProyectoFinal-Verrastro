@@ -105,11 +105,9 @@ function updateCart() {
     // Actualiza el total del carrito debajo de la lista
     totalCarrito.textContent = total.toFixed(2);
 }
-
-  const listItemTotal = document.createElement("li");
+ const listItemTotal = document.createElement("li");
   listItemTotal.textContent = `Total : $${total.toFixed(2)}`;
   cartItemsElement.appendChild(listItemTotal)
-
 
   
 
