@@ -107,8 +107,22 @@ function updateCart() {
 }
  const listItemTotal = document.createElement("li");
   listItemTotal.textContent = `Total : $${total.toFixed(2)}`;
-  cartItemsElement.appendChild(listItemTotal)
+ // cartItemsElement.appendChild(listItemTotal)
 
-  
+
+//let fechaInput = document.getElementsByClassName (".yearUsuario").value; 
+//let yearActual = document.getFullYear();
+//console.log(fechaInput);
+//function calcularEdad () {
+//yearActual - fechaInput;
+//
+//if (calcularEdad >= 18 )
+//alert("Sos mayor de edad, podes ingresar");
+//else (calcularEdad < 18)
+//alert("Sos menor de edad, no podes ingresar");
+//}
+//function mayorEdad() {
+
+
 
 

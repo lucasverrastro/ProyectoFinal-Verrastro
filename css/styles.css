@@ -18,16 +18,10 @@
 .nav {
   justify-content: space-between;
   align-items: center;
-  /*background-color: darkgoldenrod;*/
 }
 .nav .nav-link {
   font-family: "Nunito", sans-serif;
   color: beige;
-}
-
-.carrito p {
-  font-family: "Nunito", sans-serif;
-  color: black;
 }
 
 .footer {
@@ -48,6 +42,14 @@
 .footer .ubicacion {
   width: 150px;
   height: 100px;
+}
+
+.hall__footer {
+  background-color: rgb(46, 16, 46);
+  display: flexbox;
+  position: relative;
+  text-align: center;
+  align-content: flex-end;
 }
 
 body {
@@ -85,14 +87,6 @@ p {
 .hall #fields-input-year {
   align-items: center;
   padding: 40px;
-}
-
-.hall__footer {
-  background-color: rgb(46, 16, 46);
-  display: flexbox;
-  position: relative;
-  text-align: center;
-  align-content: flex-end;
 }
 
 .carousel-inner {

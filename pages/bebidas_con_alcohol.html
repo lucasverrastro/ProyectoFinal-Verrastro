@@ -30,24 +30,19 @@
         <li class="nav-item">
             <a class="nav-link" href="./promociones.html">Promociones</a>
           </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./bebidas_con_alcohol.html" role="button" aria-expanded="false">Bebidas con Alcohol</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./bebidas_con_alcohol.html">Vinos</a></li>
-            <li><a class="dropdown-item" href="./bebidas_con_alcohol.html">Champagnes</a></li>
-            <li><a class="dropdown-item" href="./bebidas_con_alcohol.html">Cervezas</a></li>
-            <li><a class="dropdown-item" href="./bebidas_con_alcohol.html">Licores</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./bebidas_sin_alcohol.html" role="button" aria-expanded="false">Bebidas sin Alcohol</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Bebidas con Alcohol</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./bebidas_sin_alcohol.html">Gaseosas</a></li>
-              <li><a class="dropdown-item" href="./bebidas_sin_alcohol.html">Energizantes</a></li>
-              <li><a class="dropdown-item" href="./bebidas_sin_alcohol.html">Jugos</a></li>
-              <li><a class="dropdown-item" href="./bebidas_sin_alcohol.html">Pulpa de frutas</a></li>
+              <li><a class="dropdown-item" href="bebidas_con_alcohol.html#vinos">Vinos</a></li>
+              <li><a class="dropdown-item" href="bebidas_con_alcohol.html#champagnes">Champagnes</a></li>
+              <li><a class="dropdown-item" href="bebidas_con_alcohol.html#cervezas">Cervezas</a></li>
+              <li><a class="dropdown-item" href="bebidas_con_alcohol.html#licores">Licores</a></li>
+              <li><a class="dropdown-item" href="bebidas_con_alcohol.html#whiskys">Whiskys</a></li>
             </ul>
           </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./bebidas_sin_alcohol.html">Bebidas sin alcohol</a>
+        </li>
           <li class="nav-item">
             <a class="nav-link" href="./congelados.html">Congelados</a>
           </li>
@@ -67,7 +62,7 @@
 </div>
 
 <h2 class="titulos">BEBIDAS CON ALCOHOL</h2>
-<h3 class="subtitulos"><strong>VINOS</strong></h3>
+<h3 id="vinos" class="subtitulos"><strong>VINOS</strong></h3>
 <div class="container__cards">
   <div class="card" data-id="1">
     <img src="../images/botella_alma_negra.jpg" class="card-img-top" alt="botella de alma negra">
@@ -167,6 +162,405 @@
   </div>
   </div>
 
+  <h3 id="champagnes" class="subtitulos"><strong>CHAMPAGNES</strong></h3>
+  <div class="container__cards">
+    <div class="card" data-id="1">
+      <img src="../images/botella_chandon_extrabrut.png" class="card-img-top" alt="CHANDON EXTRA BRUT">
+      <div class="card-body">
+        <h5 class="card-title">CHANDON EXTRA BRUT</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$7840</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card" data-id="2">
+      <img src="../images/botella_chandon_delice.jpg" class="card-img-top" alt="CHANDON DELICE">
+      <div class="card-body">
+        <h5 class="card-title">CHANDON DELICE</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$7250</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card" data-id="3">
+      <img src="../images/botella_moet.jpg" class="card-img-top" alt="MOËT & CHANDON">
+      <div class="card-body">
+        <h5 class="card-title">MOËT & CHANDON</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$5100</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(3)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card" data-id="4">
+      <img src="../images/botella_mumm_extrabrut.jpg" class="card-img-top" alt="MUMM EXTRA BRUT">
+      <div class="card-body">
+        <h5 class="card-title">MUMM EXTRA BRUT</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$3500</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(4)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card" data-id="5">
+      <img src="../images/botella_dom_perignon.jpg" class="card-img-top" alt="DOM PÉRIGNON BRUT">
+      <div class="card-body">
+        <h5 class="card-title">DOM PÉRIGNON BRUT</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$11420</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(5)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card" data-id="6">
+      <img src="../images/botella_veuve_clicquot.jpg" class="card-img-top" alt="VEUVE CLICQUOT">
+      <div class="card-body">
+        <h5 class="card-title">VEUVE CLICQUOT</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$2800</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(6)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card" data-id="7">
+      <img src="../images/botella_pommery.jpg" class="card-img-top" alt="POMMERY BRUT">
+      <div class="card-body">
+        <h5 class="card-title">POMMERY BRUT</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$8550</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(7)">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card" data-id="8">
+      <img src="../images/botella_cristal.png" class="card-img-top" alt="CRISTAL">
+      <div class="card-body">
+        <h5 class="card-title">CRISTAL</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">$3450</li>
+      </ul>
+      <div class="card-body">
+        <button class="btn btn-warning btn-sm" onclick="agregar(8)">Agregar al carrito</button>
+      </div>
+    </div>
+    </div>
+
+    <h3 id="cervezas" class="subtitulos"><strong>CERVEZAS</strong></h3>
+    <div class="container__cards">
+      <div class="card" data-id="1">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$7840</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" data-id="2">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$7250</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" data-id="3">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$5100</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(3)">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" data-id="4">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$3500</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(4)">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" data-id="5">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$11420</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(5)">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" data-id="6">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$2800</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(6)">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" data-id="7">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$8550</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(7)">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="card" data-id="8">
+        <img src=".." class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">$3450</li>
+        </ul>
+        <div class="card-body">
+          <button class="btn btn-warning btn-sm" onclick="agregar(8)">Agregar al carrito</button>
+        </div>
+      </div>
+      </div>
+
+      <h3 id="licores" class="subtitulos"><strong>LICORES</strong></h3>
+      <div class="container__cards">
+        <div class="card" data-id="1">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$7840</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-id="2">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$7250</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-id="3">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$5100</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(3)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-id="4">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$3500</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(4)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-id="5">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$11420</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(5)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-id="6">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$2800</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(6)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-id="7">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$8550</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(7)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="card" data-id="8">
+          <img src=".." class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">$3450</li>
+          </ul>
+          <div class="card-body">
+            <button class="btn btn-warning btn-sm" onclick="agregar(8)">Agregar al carrito</button>
+          </div>
+        </div>
+        </div>
+
+        <h3 id="whiskys" class="subtitulos"><strong>WHISKYS</strong></h3>
+        <div class="container__cards">
+          <div class="card" data-id="1">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$7840</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="card" data-id="2">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$7250</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(2)">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="card" data-id="3">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$5100</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(3)">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="card" data-id="4">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$3500</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(4)">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="card" data-id="5">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$11420</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(5)">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="card" data-id="6">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$2800</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(6)">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="card" data-id="7">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$8550</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(7)">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="card" data-id="8">
+            <img src=".." class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">$3450</li>
+            </ul>
+            <div class="card-body">
+              <button class="btn btn-warning btn-sm" onclick="agregar(8)">Agregar al carrito</button>
+            </div>
+          </div>
+          </div>
 
   <footer class="footer">
     <section class="footer__elementos">
