@@ -15,13 +15,27 @@
   <div class="nav-superior">
     <form class="d-flex" role="search">
       <button class="btn btn-success" type="submit">Buscar</button>
-      <input class="form-control me-2" type="search" placeholder="" aria-label="Search"> 
+      <input id="inputBuscar" class="form-control me-2" type="search" placeholder="" aria-label="Search">
+      <div id="productos">
+        <!-- Acá van a ir todos los productos cargados en la base de datos (catálogo) -->
+      </div>
     </form>
 
     <div class="carrito">
       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" data-bs-auto-close="outside" aria-expanded="false"><img src="../images/carrito-de-compras.png"></a>
-      <ul id="productos-carrito" class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
-      </ul>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside"> 
+        <section class="ocultar">
+          <h5>
+            <span id="cantidadProductos">0</span>
+          </h5>
+          <div id="scroll">
+            <div id="carrito">
+              <!-- Acá van a estar todos los productos que tengamos en el carrito -->
+            </div>
+          </div>
+          <h5>Total: $<span id="totalCarrito">0</span></h5>
+        </section>
+      </div> 
     </div>
   </div>
 
@@ -119,15 +133,15 @@
 <h2> PRODUCTOS DESTACADOS</h2>
 </div>
 
-<div class="container__cards">
+<div class="container__cards productos">
 
-<div class="card">
+<div id="1" class="card">
   <img src="./images/botella_alma_negra.jpg" class="card-img-top" alt="botella de alma negra">
   <div class="card-body">
-    <h5 class="card-title" data-product-id="1">ALMA NEGRA BLEND</h5>
+    <h5 class="card-title" id="1">ALMA NEGRA BLEND</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" data-product-id="1">$7840</li>
+    <li class="list-group-item" id="1">$7840</li>
   </ul>
   <div class="card-body">
     <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="1">Agregar al carrito</button>
@@ -142,7 +156,7 @@
     <li class="list-group-item" data-product-id="2">$7250</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="2">Agregar al carrito</button>
+    <button class="btn btn-warning btn-sm btnAgregar" data-product-id="2">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
