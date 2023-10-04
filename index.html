@@ -16,9 +16,7 @@
     <form class="d-flex" role="search">
       <button class="btn btn-success" type="submit">Buscar</button>
       <input id="inputBuscar" class="form-control me-2" type="search" placeholder="" aria-label="Search">
-      <div id="productos">
-        <!-- Acá van a ir todos los productos cargados en la base de datos (catálogo) -->
-      </div>
+
     </form>
 
     <div class="carrito">
@@ -133,9 +131,9 @@
 <h2> PRODUCTOS DESTACADOS</h2>
 </div>
 
-<div class="container__cards productos">
+<div id="productos" class="container__cards producto">
 
-<div id="1" class="card">
+<div class="card">
   <img src="./images/botella_alma_negra.jpg" class="card-img-top" alt="botella de alma negra">
   <div class="card-body">
     <h5 class="card-title" id="1">ALMA NEGRA BLEND</h5>
@@ -144,19 +142,19 @@
     <li class="list-group-item" id="1">$7840</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="1">Agregar al carrito</button>
+    <button class="btnAgregar" data-id="1">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
   <img src="./images/botella_catena_zapata.jpg" class="card-img-top" alt="D.V CATENA">
   <div class="card-body">
-    <h5 class="card-title" data-product-id="2">D.V CATENA MALBEC</h5>
+    <h5 class="card-title" data-id="2">D.V CATENA MALBEC</h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item" data-product-id="2">$7250</li>
+    <li class="list-group-item" data-id="2">$7250</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm btnAgregar" data-product-id="2">Agregar al carrito</button>
+    <button class="btnAgregar" data-id="2">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -168,7 +166,7 @@
     <li class="list-group-item" data-product-id="3">$5100</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="3">Agregar al carrito</button>
+    <button class="btnAgregar" data-product-id="3">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -180,7 +178,7 @@
     <li class="list-group-item" data-product-id="4">$3500</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="4">Agregar al carrito</button>
+    <button class="btnAgregar" data-product-id="4">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -192,7 +190,7 @@
     <li class="list-group-item" data-product-id="5">$11420</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="5">Agregar al carrito</button>
+    <button class="btnAgregar" data-product-id="5">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -204,7 +202,7 @@
     <li class="list-group-item" data-product-id="6">$2800</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="6">Agregar al carrito</button>
+    <button class="btnAgregar" data-product-id="6">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -216,7 +214,7 @@
     <li class="list-group-item" data-product-id="7">$8550</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="7">Agregar al carrito</button>
+    <button class="btnAgregar" data-product-id="7">Agregar al carrito</button>
   </div>
 </div>
 <div class="card">
@@ -228,7 +226,7 @@
     <li class="list-group-item" data-product-id="8">$3450</li>
   </ul>
   <div class="card-body">
-    <button class="btn btn-warning btn-sm add-to-cart-btn" data-product-id="8">Agregar al carrito</button>
+    <button class="btnAgregar" data-product-id="8">Agregar al carrito</button>
   </div>
 </div>
 </div>

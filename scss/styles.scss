@@ -14,6 +14,9 @@ a{
 p {
   font-family: 'Nunito', sans-serif;
   color: beige;
+  p precio{
+    color: black;
+  }
 }
 .h1 {
   font-family: 'Nunito', sans-serif;
@@ -78,6 +81,17 @@ p {
 }
 .card{
   width: 185px;
+  background-color: rgb(46, 16, 46);
+  color: beige;
+  h5{
+    display: grid;
+    text-align: center;
+  }
+  p.precio{
+    color: beige;
+    display: grid;
+    justify-items: center;
+  }
   .card-img-top{
     width: 185px;
     height: 250px;
@@ -91,11 +105,15 @@ p {
   .list-group{
     text-align: center;
   }
-}
-  .btn:active {
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+
+  .btnAgregar{
+    background-color: darkgoldenrod;
   }
+    .btnAgregar:active {
+    transform: translateY(3px);
+  }
+}
+
 .boton__ver__productos{
   display: flex;
   justify-content: center;

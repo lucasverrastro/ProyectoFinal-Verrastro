@@ -1,5 +1,3 @@
-function cargarProductos(productos) {
-
 // Clase "molde" para los productos de nuestra aplicación
 class Producto {
     constructor(id, nombre, precio, categoria, imagen) {
@@ -18,10 +16,11 @@ class Producto {
       // Array para el catálogo
       this.productos = [];
       // Empezar a cargar productos
-      this.agregarRegistro(1, "Alma Negra Blend", 7840, "Vinos", "./images/botella_alma_negra.jpg");
-      this.agregarRegistro(2, "D.V Catena Malbec", 7250, "Vinos", "./images/botella_catena_zapata.jpg");
-      this.agregarRegistro(3, "Luigi Bosca Malbec", 5100, "Vinos", "./images/botella_luigi_bosca.jpg");
-      this.agregarRegistro(4, "Nicasia Malbec", 3500, "Vinos", "./images/botella_nicasia.jpg");
+      this.agregarRegistro(1, "Alma Negra Blend", 7840, "Vinos", "../images/botella_alma_negra.jpg");
+      this.agregarRegistro(2, "D.V Catena Malbec", 7250, "Vinos", "../images/botella_catena_zapata.jpg");
+      this.agregarRegistro(3, "Luigi Bosca Malbec", 5100, "Vinos", "../images/botella_luigi_bosca.jpg");
+      this.agregarRegistro(4, "Nicasia Malbec", 3500, "Vinos", "../images/botella_nicasia.jpg");
+      this.agregarRegistro(5, "Piattelli Arlene", 11420, "Vinos", "../images/botella_piattelli_arlene.jpg");     
     }
     // Método que crea el objeto producto y lo almacena en el catálogo (array)
     agregarRegistro(id, nombre, precio, categoria, imagen) {
@@ -115,7 +114,7 @@ class Producto {
             <h5>${producto.nombre}</h5>
             <p>$${producto.precio}</p>
             <p>Cantidad: ${producto.cantidad}</p>
-            <a href="#" class="btnQuitar" data-id="${producto.id}">Quitar del carrito</a>
+            <button href="#" class="btnQuitar" data-id="${producto.id}">Quitar del carrito</button>
           </div>
         `;
         // Actualizamos los totales
@@ -166,13 +165,13 @@ class Producto {
     // Recorremos producto por producto y lo dibujamos en el HTML
     for (const producto of productos) {
       divProductos.innerHTML += `
-        <div class="producto">
-          <h2>${producto.nombre}</h2>
-          <p class="precio">$${producto.precio}</p>
+        <div class="producto card">
           <div class="imagen">
             <img src="img/${producto.imagen}" />
           </div>
-          <a href="#" class="btnAgregar" data-id="${producto.id}">Agregar al carrito</a>
+          <h5>${producto.nombre.toUpperCase()}</h5>
+          <p class="precio">$${producto.precio}</p>
+          <button class="btnAgregar" data-id="${producto.id}">Agregar al carrito</button>
         </div>
       `;
     }
@@ -208,4 +207,3 @@ class Producto {
   botonCarrito.addEventListener("click", (event) => {
     document.querySelector("section").classList.toggle("ocultar");
   });
-  }

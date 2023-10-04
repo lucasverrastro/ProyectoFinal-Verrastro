@@ -24,6 +24,10 @@
   color: beige;
 }
 
+#carrito p {
+  color: black;
+}
+
 .footer {
   background-color: darkgoldenrod;
   display: flex;
@@ -67,6 +71,9 @@ a {
 p {
   font-family: "Nunito", sans-serif;
   color: beige;
+}
+p p precio {
+  color: black;
 }
 
 .h1 {
@@ -139,6 +146,17 @@ p {
 
 .card {
   width: 185px;
+  background-color: rgb(46, 16, 46);
+  color: beige;
+}
+.card h5 {
+  display: grid;
+  text-align: center;
+}
+.card p.precio {
+  color: beige;
+  display: grid;
+  justify-items: center;
 }
 .card .card-img-top {
   width: 185px;
@@ -153,10 +171,11 @@ p {
 .card .list-group {
   text-align: center;
 }
-
-.btn:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.card .btnAgregar {
+  background-color: darkgoldenrod;
+}
+.card .btnAgregar:active {
+  transform: translateY(3px);
 }
 
 .boton__ver__productos {
