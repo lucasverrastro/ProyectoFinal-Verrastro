@@ -56,6 +56,104 @@
   align-content: flex-end;
 }
 
+.container__cards {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 50px;
+}
+
+.card {
+  width: 185px;
+  background-color: rgb(46, 16, 46);
+  color: beige;
+  /* Note that you only needs to edit the config to customize the button! */
+}
+.card h5 {
+  display: grid;
+  text-align: center;
+  margin-top: 10px;
+}
+.card p.precio {
+  color: beige;
+  display: grid;
+  justify-items: center;
+}
+.card .card-img-top {
+  width: 185px;
+  height: 250px;
+}
+.card .card-body {
+  font-family: "Nunito", sans-serif;
+  color: beige;
+  background-color: rgb(46, 16, 46);
+  text-align: center;
+}
+.card .list-group {
+  text-align: center;
+}
+.card .btnAgregar {
+  /* Config start */
+  --plus_sideLength: 2.5rem;
+  --plus_topRightTriangleSideLength: 0.9rem;
+  /* Config end */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: var(--plus_sideLength);
+  height: var(--plus_sideLength);
+  background-color: #000000;
+  overflow: hidden;
+}
+.card .btnAgregar::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-width: 0 var(--plus_topRightTriangleSideLength) var(--plus_topRightTriangleSideLength) 0;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.card .btnAgregar:hover {
+  cursor: pointer;
+}
+.card .btnAgregar:hover::before {
+  --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+}
+.card .btnAgregar:focus-visible::before {
+  --plus_topRightTriangleSideLength: calc(var(--plus_sideLength) * 2);
+}
+.card .btnAgregar > .plusIcon {
+  fill: white;
+  width: calc(var(--plus_sideLength) * 0.7);
+  height: calc(var(--plus_sideLength) * 0.7);
+  z-index: 1;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+}
+.card .btnAgregar:hover > .plusIcon {
+  fill: black;
+  transform: rotate(180deg);
+}
+.card .btnAgregar:focus-visible > .plusIcon {
+  fill: black;
+  transform: rotate(180deg);
+}
+.card .btnAgregar {
+  background-color: darkgoldenrod;
+}
+.card .btnAgregar:active {
+  transform: translateY(3px);
+}
+
 body {
   background-color: #660c33;
   color: beige;
@@ -133,49 +231,6 @@ p p precio {
   text-align: center;
   margin-bottom: 40px;
   background-color: darkgoldenrod;
-}
-
-.container__cards {
-  display: grid;
-  justify-items: center;
-  margin-bottom: 50px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-row-gap: 50px;
-}
-
-.card {
-  width: 185px;
-  background-color: rgb(46, 16, 46);
-  color: beige;
-}
-.card h5 {
-  display: grid;
-  text-align: center;
-}
-.card p.precio {
-  color: beige;
-  display: grid;
-  justify-items: center;
-}
-.card .card-img-top {
-  width: 185px;
-  height: 250px;
-}
-.card .card-body {
-  font-family: "Nunito", sans-serif;
-  color: beige;
-  background-color: rgb(46, 16, 46);
-  text-align: center;
-}
-.card .list-group {
-  text-align: center;
-}
-.card .btnAgregar {
-  background-color: darkgoldenrod;
-}
-.card .btnAgregar:active {
-  transform: translateY(3px);
 }
 
 .boton__ver__productos {

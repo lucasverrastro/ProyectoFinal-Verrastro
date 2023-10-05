@@ -20,7 +20,10 @@ class Producto {
       this.agregarRegistro(2, "D.V Catena Malbec", 7250, "Vinos", "../images/botella_catena_zapata.jpg");
       this.agregarRegistro(3, "Luigi Bosca Malbec", 5100, "Vinos", "../images/botella_luigi_bosca.jpg");
       this.agregarRegistro(4, "Nicasia Malbec", 3500, "Vinos", "../images/botella_nicasia.jpg");
-      this.agregarRegistro(5, "Piattelli Arlene", 11420, "Vinos", "../images/botella_piattelli_arlene.jpg");     
+      this.agregarRegistro(5, "Piattelli Arlene", 11420, "Vinos", "../images/botella_piattelli_arlene.jpg");
+      this.agregarRegistro(6, "Piattelli Torrontes", 2800, "Vinos", "../images/botella_piattelli_torrontes.jpg");
+      this.agregarRegistro(7, "Rutini Malbec", 8550, "Vinos", "../images/botella_rutini.jpg");
+      this.agregarRegistro(8, "Salentein Malbec", 3450, "Vinos", "../images/botella_salentein.jpg");     
     }
     // Método que crea el objeto producto y lo almacena en el catálogo (array)
     agregarRegistro(id, nombre, precio, categoria, imagen) {
@@ -37,7 +40,6 @@ class Producto {
     registroPorId(id) {
       return this.productos.find((producto) => producto.id === id);
     }
-  
     // Nos devuelve un array con todas las coincidencias que encuentre según el
     // nombre del producto con la palabra que el pasemos como parámetro
     registrosPorNombre(palabra) {
@@ -114,13 +116,14 @@ class Producto {
             <h5>${producto.nombre}</h5>
             <p>$${producto.precio}</p>
             <p>Cantidad: ${producto.cantidad}</p>
-            <button href="#" class="btnQuitar" data-id="${producto.id}">Quitar del carrito</button>
-          </div>
+            <button href="#" class="btnQuitar" data-id="${producto.id}">Quitar del carrito</button>            
+            </div>
         `;
         // Actualizamos los totales
         this.total += producto.precio * producto.cantidad;
         this.cantidadProductos += producto.cantidad;
       }
+      
       // Como no se cuantos productos tengo en el carrito, debo
       // asignarle los eventos de forma dinámica a cada uno
       // Primero hago una lista de todos los botones con .querySelectorAll
@@ -171,8 +174,14 @@ class Producto {
           </div>
           <h5>${producto.nombre.toUpperCase()}</h5>
           <p class="precio">$${producto.precio}</p>
-          <button class="btnAgregar" data-id="${producto.id}">Agregar al carrito</button>
+          <div tabindex="0" class="btnAgregar" data-id="${producto.id}" class="plusButton">
+          <svg class="plusIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+            <g mask="url(#mask0_21_345)">
+              <path d="M13.75 23.75V16.25H6.25V13.75H13.75V6.25H16.25V13.75H23.75V16.25H16.25V23.75H13.75Z"></path>
+            </g>
+          </svg>
         </div>
+          </div>
       `;
     }
   
@@ -199,11 +208,10 @@ class Producto {
   inputBuscar.addEventListener("input", (event) => {
     event.preventDefault();
     const palabra = inputBuscar.value;
-    const productos = bd.registrosPorNombre(palabra);
-    cargarProductos(productos);
+    const buscador = bd.registrosPorNombre(palabra);
+    cargarProductos(buscador);
   });
-  
-  // Trigger para ocultar/mostrar el carrito
-  botonCarrito.addEventListener("click", (event) => {
-    document.querySelector("section").classList.toggle("ocultar");
-  });
+// Toggle para ocultar/mostrar el carrito
+botonCarrito.addEventListener("click", (event) => {
+  document.querySelector("section").classList.toggle("ocultar");
+});
