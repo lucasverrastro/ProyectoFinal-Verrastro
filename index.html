@@ -20,18 +20,21 @@
     </form>
 
     <div class="carrito">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" data-bs-auto-close="outside" aria-expanded="false"><img src="./images/carrito-de-compras.png"></a>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside"> 
+      <button class="btn carrito-compras btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="./images/carrito-de-compras.png"></button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <h4 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h4>
         <section class="ocultar">
           <h5>
-            <span id="cantidadProductos">0</span>
+          <p>Cantidad de Productos: <span id="cantidadProductos">0</span></p>
           </h5>
+          <hr>
           <div id="scroll">
             <div id="carrito">
               <!-- Acá van a estar todos los productos que tengamos en el carrito -->
             </div>
           </div>
           <h5>Total: $<span id="totalCarrito">0</span></h5>
+          <button id="btnComprar" class="btn btn-success">Comprar</button>
         </section>
       </div> 
     </div>

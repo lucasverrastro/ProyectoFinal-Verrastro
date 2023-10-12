@@ -113,11 +113,13 @@ class Producto {
       for (const producto of this.carrito) {
         divCarrito.innerHTML += `
           <div class="productoCarrito">
-            <h5>${producto.nombre}</h5>
+            <img class="img-productos-carrito" src="${producto.imagen}"></img>
+            <p>${producto.nombre}</p>
             <p>$${producto.precio}</p>
             <p>Cantidad: ${producto.cantidad}</p>
-            <button href="#" class="btnQuitar" data-id="${producto.id}">Quitar del carrito</button>            
+            <button href="#" class="btnQuitar btn btn-danger btn-sm" data-id="${producto.id}">Quitar del carrito</button>            
             </div>
+            <hr>
         `;
         // Actualizamos los totales
         this.total += producto.precio * producto.cantidad;
