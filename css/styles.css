@@ -15,6 +15,9 @@
   column-gap: 5px;
   margin-right: 60px;
 }
+.nav-superior #productos {
+  z-index: 97;
+}
 
 .nav {
   justify-content: space-between;
@@ -56,6 +59,7 @@
 }
 .carrito .offcanvas p {
   color: black;
+  justify-content: space-between;
 }
 
 .footer {

@@ -125,7 +125,13 @@ class Producto {
         this.total += producto.precio * producto.cantidad;
         this.cantidadProductos += producto.cantidad;
       }
-      
+      if (this.cantidadProductos > 0) {
+        // Botón comprar visible
+        botonComprar.style.display = "block";
+      } else {
+        // Botón comprar invisible
+        botonComprar.style.display = "none";
+      }
       // Como no se cuantos productos tengo en el carrito, debo
       // asignarle los eventos de forma dinámica a cada uno
       // Primero hago una lista de todos los botones con .querySelectorAll
@@ -156,6 +162,7 @@ class Producto {
   const divCarrito = document.querySelector("#carrito");
   const inputBuscar = document.querySelector("#inputBuscar");
   const botonCarrito = document.querySelector("section h1");
+  const botonComprar = document.querySelector("#btnComprar");
   
   // Instaciamos la clase Carrito
   const carrito = new Carrito();
@@ -205,15 +212,15 @@ class Producto {
       });
     }
   }
-  
-  // Buscador
+   //Buscador
   inputBuscar.addEventListener("input", (event) => {
     event.preventDefault();
     const palabra = inputBuscar.value;
     const buscador = bd.registrosPorNombre(palabra);
     cargarProductos(buscador);
   });
+  
 // Toggle para ocultar/mostrar el carrito
-botonCarrito.addEventListener("click", (event) => {
-  document.querySelector("section").classList.toggle("ocultar");
-});
+//botonCarrito.addEventListener("click", (event) => {
+//  document.querySelector("section").classList.toggle("ocultar");
+//});
