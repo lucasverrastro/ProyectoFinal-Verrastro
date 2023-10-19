@@ -114,3 +114,11 @@ p {
     margin-top: 15px;   
   }
 }
+.buscador{
+  display: flex;  
+  justify-content: center;
+  #inputBuscar{
+    width: 260px;
+    margin-bottom: 20px;
+  }
+}

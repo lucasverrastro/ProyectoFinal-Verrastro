@@ -15,9 +15,6 @@
   column-gap: 5px;
   margin-right: 60px;
 }
-.nav-superior #productos {
-  z-index: 97;
-}
 
 .nav {
   justify-content: space-between;
@@ -103,7 +100,6 @@
   width: 185px;
   background-color: rgb(46, 16, 46);
   color: beige;
-  /* Note that you only needs to edit the config to customize the button! */
 }
 .card h5 {
   display: grid;
@@ -310,6 +306,15 @@ p p precio {
 }
 .tarjeta__contacto .boton__enviar {
   margin-top: 15px;
+}
+
+.buscador {
+  display: flex;
+  justify-content: center;
+}
+.buscador #inputBuscar {
+  width: 260px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

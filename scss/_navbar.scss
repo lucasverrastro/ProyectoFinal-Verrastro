@@ -12,9 +12,6 @@
     column-gap: 5px;
     margin-right: 60px;
   }
-  #productos{
-    z-index: 97;
-  }  
   } 
   .nav{
     justify-content: space-between;
@@ -24,6 +21,7 @@
     color: beige; 
     }
   }
+
   #carrito{
     display: flex;
     flex-direction: column;

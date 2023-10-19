@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "nombre": "Alma Negra Blend",
+    "precio": 7840,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_alma_negra.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "D.V Catena Malbec",
+    "precio": 7250,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_catena_zapata.jpg"
+  },    
+  {
+    "id": 3,
+    "nombre": "Luigi Bosca Malbec",
+    "precio": 5100,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_luigi_bosca.jpg"
+  }, 
+  {
+    "id": 4,
+    "nombre": "Nicasia Malbec",
+    "precio": 3500,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_nicasia.jpg"
+  }, 
+  {
+    "id": 5,
+    "nombre": "Piattelli Arlene",
+    "precio": 11420,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_piattelli_arlene.jpg"
+  }, 
+  {
+    "id": 6,
+    "nombre": "Piattelli Torrontes",
+    "precio": 2800,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_piattelli_torrontes.jpg"
+  }, 
+  {
+    "id": 7,
+    "nombre": "Rutini Malbec",
+    "precio": 8550,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_rutini.jpg"
+  }, 
+  {
+    "id": 8,
+    "nombre": "Salentein Malbec",
+    "precio": 3450,
+    "categoria": "Vinos",
+    "imagen": "../images/botella_salentein.jpg"
+  } 
+]
